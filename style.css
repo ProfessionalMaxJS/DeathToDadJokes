@@ -3,11 +3,13 @@
     color: red;
     text-decoration: line-through;
     font-size: 57px;
+    font-family: "Permanent Marker", sans-serif;
 }
 
 .red{
     color: red;
     font-size: 57px;
+    font-family: "Permanent Marker", sans-serif;
 }
 
 .hide-me{
