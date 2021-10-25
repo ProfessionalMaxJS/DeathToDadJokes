@@ -1,0 +1,15 @@
+
+.line-thru{
+    color: red;
+    text-decoration: line-through;
+    font-size: 57px;
+}
+
+.red{
+    color: red;
+    font-size: 57px;
+}
+
+.hide-me{
+visibility: hidden;
+}

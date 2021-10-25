@@ -1,0 +1,21 @@
+{
+	"jokes":
+
+		[	
+			{
+				"id": "1",
+				"setup": "I once had a CHIC rooster",
+				"punchline": "I named him KEN."
+			},
+			{
+				"id": "2",
+				"setup": "I got told off by a JS function yesterday.",
+				"punchline": "She said, I ain't no calla-back girl!"
+			},
+			{
+				"id": "3",
+				"setup": "Why is a polar bear the friendliest animal?",
+				"punchline": "It loves to break the ice!"
+			},
+		]
+}
