@@ -2,13 +2,9 @@ let marks = document.getElementById("marks");
 let fives = document.getElementById("fives");
 let ones = document.getElementById("ones");
 
-
-let featJoke = document.createElement("div");
-document.body.appendChild(featJoke);
-let featSetup = document.createElement("p");
-featJoke.appendChild(featSetup);
-let featPunchline = document.createElement("p");
-featJoke.appendChild(featPunchline);
+let featJoke = document.getElementById("feat-joke");
+let featSetup = document.getElementById("feat-setup");
+let featPunchline = document.getElementById("feat-punchline");
 
 let punchButton = document.getElementById("punch-button");
 let jokeStr = "";
@@ -35,13 +31,11 @@ function tallyMark(count){
 for(let i=0; i<quotient; i++){
     fives.textContent="";
     ones.textContent="";
-    // let tallies = "";    
     tallies += "||||  ";
     fives.append(tallies);
 }
 for(let k=0; k<remainder; k++){
     ones.textContent="";
-    // let tally = "";
     tally += "|"
     ones.append(tally);
 }}
