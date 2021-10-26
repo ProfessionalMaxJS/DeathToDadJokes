@@ -29,18 +29,18 @@ function tallyMark(count){
     console.log(remainder);
     let tally = ""
     let tallies = ""
+    fives.textContent = "";
+    ones.textContent = "";
 
 for(let i=0; i<quotient; i++){
-    fives.textContent="";
-    ones.textContent="";
     tallies += "||||  ";
-    fives.append(tallies);
 }
 for(let k=0; k<remainder; k++){
-    ones.textContent="";
     tally += "|"
-    ones.append(tally);
-}}
+}
+fives.append(tallies);
+ones.append(tally);
+}
 
 function newJoke(){
     fetch("https://icanhazdadjoke.com",{headers: {"Content-Type":"application/json", "Accept":"application/json"}})
