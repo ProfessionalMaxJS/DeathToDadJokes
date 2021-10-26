@@ -1,13 +1,15 @@
-let marks = document.getElementById("marks");
-let fives = document.getElementById("fives");
-let ones = document.getElementById("ones");
+const marks = document.getElementById("marks");
+const fives = document.getElementById("fives");
+const ones = document.getElementById("ones");
 
-let featJoke = document.getElementById("feat-joke");
-let featSetup = document.getElementById("feat-setup");
-let featPunchline = document.getElementById("feat-punchline");
+const featJoke = document.getElementById("feat-joke");
+const featSetup = document.getElementById("feat-setup");
+const featPunchline = document.getElementById("feat-punchline");
 
-let punchButton = document.getElementById("punch-button");
-let jokeStr = "";
+featSetup.textContent = "I got told off by a javascript function the other day."
+let jokeStr = "She said, 'I ain't no calla-back girl!'";
+const punchButton = document.getElementById("punch-button");
+punchButton.classList.remove("hide-me");
 
 const likeButton = document.getElementById("like-button");
 
@@ -58,8 +60,6 @@ function newJoke(){
         featSetup.textContent = jokeStr;
     }})
 }
-
-
 
 punchButton.addEventListener("click", (event)=>{
    featPunchline.textContent = jokeStr;
