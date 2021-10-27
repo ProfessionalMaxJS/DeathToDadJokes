@@ -1,28 +1,39 @@
-const marks = document.getElementById("marks");
-const fives = document.getElementById("fives");
-const ones = document.getElementById("ones");
+// const likeMarks = document.getElementById("like-marks");
+const like5 = document.getElementById("like-5");
+const like1 = document.getElementById("like-1");
 
+// const killMarks = document.getElementById("kill-marks");
+const kill1 = document.getElementById("kill-1");
+const kill5 = document.getElementById("kill-5");
 
 const featJoke = document.getElementById("feat-joke");
-const featSetup = document.getElementById("feat-setup");
-const featPunchline = document.getElementById("feat-punchline");
+const setups = document.getElementById("setups");
+const punchlines = document.getElementById("punchlines");
 
-featSetup.textContent = "I got told off by a javascript function the other day."
+setups.textContent = "I got told off by a javascript function the other day."
 let jokeStr = "She said, 'I ain't no calla-back girl!'";
 const punchButton = document.getElementById("punch-button");
 punchButton.classList.remove("hide-me");
 
-const likeButton = document.getElementById("like-button");
+const likeBtn = document.getElementById("like-btn");
+const killBtn = document.getElementById("kill-btn");
 
-let totalVal = 0;
+let likeVal = 0;
+let killVal = 0;
 
-likeButton.addEventListener("click", event =>{
-    totalVal+=1;
-    tallyMark(totalVal);
+likeBtn.addEventListener("click", event =>{
+    likeVal+=1;
+    tallyMark(likeVal, like1, like5);
+    newJoke();
+})
+killBtn.addEventListener("click", event =>{
+    killVal +=1;
+    console.log(killVal);
+    tallyMark(killVal, kill1, kill5);
     newJoke();
 })
 
-function tallyMark(count){
+function tallyMark(count, ones, fives){
     console.log(count);
     let quotient = Math.floor(count/5);
     console.log(quotient);
@@ -46,23 +57,27 @@ ones.append(tally);
 function newJoke(){
     fetch("https://icanhazdadjoke.com",{headers: {"Content-Type":"application/json", "Accept":"application/json"}})
     .then(resp => resp.json())
+    .catch(err => {
+        console.error(err);
+        setups.textContent = `${err}; please try again`
+    })
     .then(data => {
         punchButton.classList.add("hide-me");
-        featPunchline.textContent = "";
+        punchlines.textContent = "";
         console.log(data.joke)
         jokeStr = data.joke;    
-    if (data.joke.includes("?")){
-        let parsedJoke = data.joke.split("?");
-        featSetup.textContent=`${parsedJoke[0]}?`
+    if (jokeStr.includes("?")){
+        let parsedJoke = jokeStr.split("?");
+        setups.textContent=`${parsedJoke[0]}?`
         jokeStr = `${parsedJoke[1]}`
         punchButton.classList.remove("hide-me");
     }
     else{
-        featSetup.textContent = jokeStr;
+        setups.textContent = jokeStr;
     }})
 }
 
 punchButton.addEventListener("click", (event)=>{
-   featPunchline.textContent = jokeStr;
+   punchlines.textContent = jokeStr;
    punchButton.classList.add("hide-me");
 })

@@ -111,3 +111,15 @@ color: #FFFFFF;
 background: padding-box;
 }
 
+.hide-me{
+    visibility: hidden;
+    }
+
+.marks{
+    text-align: right;
+    color: green;
+}
+
+.fives{
+    text-decoration: wavy line-through;
+}
