@@ -12,7 +12,7 @@ body {
     position: initial;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url('/gnarledBarkTrees.png');
+    background-image: url(/gnarledBarkTrees.png);
     background: linear;
     background-repeat: no-repeat;
 }
@@ -51,8 +51,8 @@ margin-right: auto;
 
 #like-btn{
     position: absolute;
-    left: 100px;
-    top: 41%;
+    right: 100px;
+    top: 35%;
     border-radius: 50%;
     border: groove;
     padding: 42px;
@@ -86,8 +86,8 @@ margin-right: auto;
     left: 0;
     bottom: 0;
      height: 600px;
-     width: 600px; 
-    background-image: url(/Tombstone.png);
+     width: 600px;
+    background-image: url(./Tombstone.png);
      background-size: 100% 100%;
     background-repeat: no-repeat; 
 }
@@ -123,3 +123,22 @@ background: padding-box;
 .fives{
     text-decoration: wavy line-through;
 }
+
+
+
+/* set ups  */
+/* position: relative;
+    border: 2
+px
+ solid black;
+    color: #FFFFFF;
+    background: #912C22;
+    text-shadow: 0 0 10px #ffffff;
+    color: #FFFFFF;
+    background: padding-box;
+    top: 27%;
+    left: 13%;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 29%;
+    width: 59%;
+    height: 29%; */
