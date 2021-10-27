@@ -1,43 +1,23 @@
-* {
-    border: 1px solid black;
-}
-
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-color: red; 
-    height: 100vh;
-    width: 100wh;
+/*    height: 100vh;
+    width: 100wh;*/
+    background-size: cover;   
     position: initial;
-    background-size: cover;
     background-position: 50% 50%;
     background-image: url(/gnarledBarkTrees.png);
+    background-attachment: fixed;
     background: linear;
     background-repeat: no-repeat;
 }
 
-
-#pillers {
-    display: block;
-margin-left: auto;
-margin-right: auto;
-}
-
-/*
-.gameBoard {
-    height: 100vh;
-    width: 100wh;
-    position: initial;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url(./graveyardLandscape.png);
-    background: linear
-}
-*/
-
-#btn {
-    background-color: khaki;
+#title{
+    color: green;
+    position: absolute;
+    right: 20%;
 }
 
 #tombstone {
@@ -49,30 +29,28 @@ margin-right: auto;
     border: 2px solid black;
 }
 
-#like-btn{
-    position: absolute;
-    right: 100px;
-    top: 35%;
-    border-radius: 50%;
-    border: groove;
-    padding: 42px;
-}
-
 #like-btn:hover{
     box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
     0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
     cursor: url(/images/cursor.png), url;
 }
 
-
-#kill-btn {
+#like-btn{
     position: absolute;
-    right: 100px;
-    top: 41%;
+    right: 333px;
+    top: 11%;
     border-radius: 50%;
     border: groove;
     padding: 42px;
-    cursor: url(/images/knife.png);
+}
+
+#kill-btn {
+    position: absolute;
+    right: 8px;
+    top: 26%;
+    border-radius: 50%;
+    border: groove;
+    padding: 42px;
 }
 
 #kill-btn:hover {
@@ -92,18 +70,89 @@ margin-right: auto;
     background-repeat: no-repeat; 
 }
 
+.marks{
+    text-align:unset;
+    color: green;
+}
+
+#like-marks{
+    position: absolute;
+    border: solid green 2px;
+    width: 140px;
+    height: 188px;
+    left: 600px;
+    bottom: 0px;
+}
+
+#kill-marks{
+    border: solid green 2px;
+    height: 188px;
+    width: 167px;
+    position: absolute;
+    left: 809px;
+    bottom: 0px;
+}
+
+
+.fives{
+    text-decoration: wavy line-through;
+}
+
 #setups{
- /*   top: 58%;
-    left: 39%;*/
+    position: relative;
+    border: 2px solid black;
+    color: #FFFFFF;
+    background: #912C22;
+    text-shadow: 0 0 10px #ffffff;
+    color: #FFFFFF;
+    background: padding-box;
+    top: 8%;
+    left: 20%;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 29%;
+    width: 45%;
+    height: 46%;
+}
+
+#punch-button{
+    position: absolute;
+    left: 144px;
+    top: 350px;
+    width: 224px;
+    border-radius: 50%;
+    border: groove;
+    padding: 4px;
+}
+
+#punchlines{
+    bottom: 42px;
+    position: absolute;
+    right: 85px;
+    width: 414px;
+    border-top-right-radius: 54%;
+    border-bottom-left-radius: 81%;
+    border: 2px solid black;
+    height: 157px;
+}
+
+/*
+.hide-me{
+    visibility: hidden;
+    }
+*/
+
+/*
+#setups{
+   top: 58%;
+    left: 39%;
     position: relative;
 
     border: 2px solid black;
-    /* color: #FFFFFF;
+    color: #FFFFFF;
     background: #FFFFFF;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
     color: #FFFFFF;
     background: padding-box;
- */
 color: #FFFFFF;
 background: #912C22;
 text-shadow: 0 0 10px #FFFFFF;
@@ -111,34 +160,28 @@ color: #FFFFFF;
 background: padding-box;
 }
 
-.hide-me{
-    visibility: hidden;
-    }
-
-.marks{
-    text-align: right;
-    color: green;
+.gameBoard {
+    height: 100vh;
+    width: 100wh;
+    position: initial;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(./graveyardLandscape.png);
+    background: linear
 }
 
-.fives{
-    text-decoration: wavy line-through;
+#pillers {
+    display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
+#btn {
+    background-color: khaki;
+}
 
+* {
+    border: 1px solid black;
+}
 
-/* set ups  */
-/* position: relative;
-    border: 2
-px
- solid black;
-    color: #FFFFFF;
-    background: #912C22;
-    text-shadow: 0 0 10px #ffffff;
-    color: #FFFFFF;
-    background: padding-box;
-    top: 27%;
-    left: 13%;
-    border-top-left-radius: 6%;
-    border-top-right-radius: 29%;
-    width: 59%;
-    height: 29%; */
+*/
