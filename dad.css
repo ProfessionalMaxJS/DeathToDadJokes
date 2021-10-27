@@ -1,0 +1,87 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+#pillers {
+    display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.gameBoard {
+    height: 100vh;
+    width: 100wh;
+    position: initial;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(/images/PngItem_1652695.png);
+    background: linear
+}
+
+#btn {
+    background-color: khaki;
+}
+
+#tombstone {
+    width: 50%;
+    height: 57%;
+    top: 43%;
+    left: 28%;
+    position: relative;
+}
+
+
+#like-btn{
+    position: absolute;
+    left: 100px;
+    top: 41%;
+    border-radius: 50%;
+    border: groove;
+    padding: 42px;
+}
+
+#like-btn:hover{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+    0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    cursor: url(/images/cursor.png), url;
+}
+
+
+#kill-btn {
+    position: absolute;
+    right: 100px;
+    top: 41%;
+    border-radius: 50%;
+    border: groove;
+    padding: 42px;
+    cursor: url(/images/knife.png);
+}
+
+#kill-btn:hover {
+    box-shadow: 0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #8b1515,
+    0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #f41515;
+    
+}
+
+#jokes{
+    top: 58%;
+    left: 39%;
+    position: absolute;
+    /* color: #FFFFFF;
+    background: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    color: #FFFFFF;
+    background: padding-box;
+ */
+color: #FFFFFF;
+background: #912C22;
+text-shadow: 0 0 10px #FFFFFF;
+color: #FFFFFF;
+background: padding-box;
+}
+
