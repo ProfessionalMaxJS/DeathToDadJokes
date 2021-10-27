@@ -1,9 +1,20 @@
-
+* {
+    border: 1px solid black;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    background-color: red; 
+    height: 100vh;
+    width: 100wh;
+    position: initial;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url('/gnarledBarkTrees.png');
+    background: linear;
+    background-repeat: no-repeat;
 }
 
 
@@ -13,15 +24,17 @@ margin-left: auto;
 margin-right: auto;
 }
 
+/*
 .gameBoard {
     height: 100vh;
     width: 100wh;
     position: initial;
     background-size: cover;
     background-position: 50% 50%;
-    background-image: url(/images/PngItem_1652695.png);
+    background-image: url(./graveyardLandscape.png);
     background: linear
 }
+*/
 
 #btn {
     background-color: khaki;
@@ -33,8 +46,8 @@ margin-right: auto;
     top: 43%;
     left: 28%;
     position: relative;
+    border: 2px solid black;
 }
-
 
 #like-btn{
     position: absolute;
@@ -68,10 +81,23 @@ margin-right: auto;
     
 }
 
-#jokes{
-    top: 58%;
-    left: 39%;
+#joke-display{
     position: absolute;
+    left: 0;
+    bottom: 0;
+     height: 600px;
+     width: 600px; 
+    background-image: url(/Tombstone.png);
+     background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+
+#setups{
+ /*   top: 58%;
+    left: 39%;*/
+    position: relative;
+
+    border: 2px solid black;
     /* color: #FFFFFF;
     background: #FFFFFF;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;

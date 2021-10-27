@@ -10,16 +10,21 @@
 
 </head>
 <body>
-    <div class='gameBoard'>
-        <img id='tombstone'  src="/images/Tombstone.png">
-        <h1 id='jokes'>Displayed Jokes</h1>
-        <div class="btn">
+        <div id="joke-display" >
+        <h1 id='setups'>Displayed Jokes</h1>
+        <h2 id="punchlines">Displayed Punchlines</h2>
+        <button id="punch-button">Give it to Me!</button>
+    </div>
+        
+    <div id="like-sect" class="btn">
             <button id='like-btn'>I'll<br> let it<br> pass!</button>
+            <h1 id="like-marks"></h1>   
         </div>
-        <div>
+        <div id="kill-sect" class="btn">
             <button id='kill-btn'> This<br>is too <br>painful!</button>
+            <h2 id="kill-marks"></h2>
         </div>
         
-    </div>
+<script source="./index.js"></script>
 </body>
 </html>

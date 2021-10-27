@@ -2,6 +2,7 @@ const marks = document.getElementById("marks");
 const fives = document.getElementById("fives");
 const ones = document.getElementById("ones");
 
+const jokes = 
 const featJoke = document.getElementById("feat-joke");
 const featSetup = document.getElementById("feat-setup");
 const featPunchline = document.getElementById("feat-punchline");
