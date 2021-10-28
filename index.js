@@ -11,7 +11,8 @@ const setups = document.getElementById("setups");
 const punchlines = document.getElementById("punchlines");
 
 setups.textContent = "I got told off by a javascript function the other day."
-let jokeStr = "She said, 'I ain't no calla-back girl!'";
+punchlines.textContent = "";
+let jokeStr = "She said, `I ain't no calla-back girl!`";
 const punchButton = document.getElementById("punch-button");
 punchButton.classList.remove("hide-me");
 

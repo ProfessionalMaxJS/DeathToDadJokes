@@ -1,7 +1,3 @@
-* {
-    border: 1px solid black;
-}
-
 body {
         margin: 0;
         padding: 0;
@@ -17,9 +13,6 @@ body {
         background-repeat: no-repeat;
     }
 
-
-
-
 #tombstone {
     width: 50%;
     height: 57%;
@@ -28,6 +21,7 @@ body {
     position: relative;
     border: 2px solid black;
 }
+
 
 #like-btn{
     position: absolute;
@@ -56,15 +50,22 @@ body {
     cursor: url(/images/cursor.png), url;
 }
 
-
-#kill-btn {
+#like-btn{
     position: absolute;
-    right: 100px;
-    top: 41%;
+    right: 333px;
+    top: 11%;
     border-radius: 50%;
     border: groove;
     padding: 42px;
-    cursor: url(/images/knife.png);
+}
+
+#kill-btn {
+    position: absolute;
+    right: 8px;
+    top: 26%;
+    border-radius: 50%;
+    border: groove;
+    padding: 42px;
 }
 
 #kill-btn:hover {
@@ -84,6 +85,78 @@ body {
     background-repeat: no-repeat; 
 }
 
+.marks{
+    text-align:unset;
+    color: green;
+}
+
+#like-marks{
+    position: absolute;
+    border: solid green 2px;
+    width: 140px;
+    height: 188px;
+    left: 600px;
+    bottom: 0px;
+}
+
+#kill-marks{
+    border: solid green 2px;
+    height: 188px;
+    width: 167px;
+    position: absolute;
+    left: 809px;
+    bottom: 0px;
+}
+
+
+.fives{
+    text-decoration: wavy line-through;
+}
+
+#setups{
+    position: relative;
+    border: 2px solid black;
+    color: #FFFFFF;
+    background: #912C22;
+    text-shadow: 0 0 10px #ffffff;
+    color: #FFFFFF;
+    background: padding-box;
+    top: 8%;
+    left: 20%;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 29%;
+    width: 45%;
+    height: 46%;
+}
+
+#punch-button{
+    position: absolute;
+    left: 144px;
+    top: 350px;
+    width: 224px;
+    border-radius: 50%;
+    border: groove;
+    padding: 4px;
+}
+
+#punchlines{
+    bottom: 42px;
+    position: absolute;
+    right: 85px;
+    width: 414px;
+    border-top-right-radius: 54%;
+    border-bottom-left-radius: 81%;
+    border: 2px solid black;
+    height: 157px;
+}
+
+/*
+.hide-me{
+    visibility: hidden;
+    }
+*/
+
+/*
 #setups{
     width: 300px;
     height: 133px;
@@ -97,21 +170,28 @@ body {
     background: #912C22;
     text-shadow: -14px 20px 10px #972d2d;
     background: padding-box;
+
 }
 
-.hide-me{
-    visibility: hidden;
-    }
-
-.marks{
-    text-align: right;
-    color: green;
+.gameBoard {
+    height: 100vh;
+    width: 100wh;
+    position: initial;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(./graveyardLandscape.png);
+    background: linear
 }
 
-.fives{
-    text-decoration: wavy line-through;
+#pillers {
+    display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
+#btn {
+    background-color: khaki;
+}
 
 #punchlines {
     width: 300px;
@@ -179,4 +259,3 @@ body {
     border-top-left-radius: 84%;
     border-bottom-left-radius: 74%;
 }
-
