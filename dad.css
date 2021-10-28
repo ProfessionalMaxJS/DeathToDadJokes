@@ -1,11 +1,11 @@
-* {
+/* {
     border: 1px solid black;
-}
+}*/
 
 body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
+        font-family: 'Permanent Marker', cursive;
         background-color: #422a2a;
         height: 100vh;
         width: 100wh;
@@ -16,9 +16,6 @@ body {
         background: linear;
         background-repeat: no-repeat;
     }
-
-
-
 
 #tombstone {
     width: 50%;
@@ -57,7 +54,7 @@ body {
 }
 
 
-#kill-btn {
+/*#kill-btn {
     position: absolute;
     right: 100px;
     top: 41%;
@@ -66,11 +63,11 @@ body {
     padding: 42px;
     cursor: url(/images/knife.png);
 }
+*/
 
 #kill-btn:hover {
     box-shadow: 0 5px 50px 0 #f49b15 inset, 0 5px 50px 0 #f49b15,
-    0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #f41515;
-    
+    0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #f41515; 
 }
 
 #joke-display{
@@ -88,15 +85,16 @@ body {
     width: 300px;
     height: 133px;
     padding: 50px;
-    left: 10%;
-    top: 10%;
+    left: 7%;
+    top: 4%;
     border: none;
     position: relative;
     border: none;
-    color: #FFFFFF;
+    color: black;
     background: #912C22;
-    text-shadow: -14px 20px 10px #972d2d;
+    text-shadow: -20px 20px 10px #972d2d;
     background: padding-box;
+    transform: rotate(-13deg);
 }
 
 .hide-me{
@@ -109,7 +107,7 @@ body {
 }
 
 .fives{
-    text-decoration: wavy line-through;
+    text-decoration: line-through;
 }
 
 
@@ -120,11 +118,14 @@ body {
     position: absolute;
     left: 19%;
     border: none;
-    text-shadow: 18px 20px 8px #2fb615;
+    text-shadow: -20px 20px 8px #2fb615;
+    transform: rotate(-13deg);
 }
 
 
 #like-btn {
+    font-family: "Permanent Marker", cursive;
+    color: whitesmoke;
     position: absolute;
     right: 100px;
     top: 35%;
@@ -145,18 +146,15 @@ body {
 }
 
 #kill-btn {
+    font-family: "Permanent Marker", cursive;
+    color: whitesmoke;
     position: absolute;
-    right: 33%;
-    top: 32%;
-    border: 2px solid black;
+    right: 2%;
+    top: 25%;
     border-radius: 50%;
     position: absolute;
-    right: 33%;
-    top: 32%;
-    border: 2px solid black;
     border-radius: 50%;
-    background: linear-gradient(
-    57deg, #912c22f5, #000000bd);
+    background: linear-gradient(57deg, #912c22f5, #000000bd);
     font-size: inherit;
     border-top-right-radius: 0%;
     border-top-left-radius: 95%;
@@ -167,16 +165,88 @@ body {
 }
 
 #punch-button {
+    font-family: "Permanent Marker", cursive;
+    color: black;
     text-size-adjust: 142%;
     height: 10%;
     width: 23%;
     border-radius: 88%;
-    background: #5e9788;
+    background: linear-gradient(271deg, #e18700, #c3c2c2bd);
     position: absolute;
     top: 78%;
     left: 44%;
-    border-top-right-radius: 83%;
-    border-top-left-radius: 84%;
-    border-bottom-left-radius: 74%;
+    border-top-right-radius: 43%;
+    border-top-left-radius: 38%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 38%;
 }
 
+
+#like-marks{
+    text-align: right;
+    color: green;
+    position: absolute;
+    width: 155px;
+    height: 188px;
+    left: 867px;
+    bottom: 70px;
+}
+#kill-marks{
+    text-align: right;
+    color: red;
+    height: 188px;
+    width: 167px;
+    position: absolute;
+    left: 86%;
+    bottom: 11%;
+}
+
+#reset-btn{
+    font-family: "Permanent Marker", cursive;
+    color: white;
+    right: 13%;
+    top: 82%;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(321deg, #00fbfb, #000000bd);
+    font-size: inherit;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 78%;
+    border-bottom-right-radius: 2%;
+    border-bottom-left-radius: 88%;
+    border: #00fbfb;
+    border-style: ridge;
+    padding: 20px;
+}
+
+#reset-btn:hover {
+    box-shadow: 0 5px 50px 0 #00fbfb inset, 0 5px 50px 0 #00fbfb,
+    0 5px 50px 0 #5914da inset, 0 5px 50px 0 #5914da; 
+}
+
+#title{
+    position: absolute;
+    width: 300px;
+    height: 133px;
+    padding: 50px;
+    left: 29%;
+    top: -25%;
+    text-shadow: #2fb615;
+
+}#DTDJ {
+    font-size: 77px;
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    width: 300px;
+    height: 133px;
+    padding: 50px;
+    left: 10%;
+    top: 10%;
+    border: none;
+    position: relative;
+    border: none;
+    color: #2da514;
+    background: #912C22;
+    text-shadow: -14px 20px 10px #972d2d;
+    background: padding-box;
+}

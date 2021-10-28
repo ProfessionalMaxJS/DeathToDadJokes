@@ -7,26 +7,29 @@
     <title>Death to Dad Jokes </title>
     <link rel="stylesheet" href="/dad.css">
     <meta charset="UTF-8">
-
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id='title'>
+        <h1 id='DTDJ'>Death To<br> Dad JOKES!</h1>
+    </div>
         <div id="joke-display" >
         <h1 id='setups'>Displayed Jokes</h1>
         <h2 id="punchlines">Displayed Punchlines</h2>
-        <button id="punch-button">Give it to Me!</button>
+        <button class="button" id="punch-button">Do you reeeeally<br>want to know<br>the punchline?</button>
     </div>
         
     <div id="like-sect" class="btn">
-            <button id='like-btn'>I'll<br> let it<br> pass!</button>
+            <button id='like-btn'>Hey,<br>that was funny!</button>
 
-            <h1 class="marks"><span id="like-1"></span><span class="fives"; id="like-5"></span></h1>   
+            <h1 class="marks" id="like-marks"><span class="fives"; id="like-5"></span><span id="like-1"></span></h1>   
         </div>
         <div id="kill-sect" class="btn">
-            <button id='kill-btn'> This<br>is too <br>painful!</button>
-            <h1 class="marks"><span id="kill-1"></span><span class="fives"; id="kill-5"></span></h1>
+            <button id='kill-btn'> CRINGE!</button>
+            <h1 class="marks" id="kill-marks"><span class="fives"; id="kill-5"></span><span id="kill-1"></span></h1>
         </div>
-        <div id='reset-btn' class="btn">
-            <button>Reset</button>
+        <div id="reset-sect" class="btn">
+            <button class="btn" id='reset-btn'>Clean Slate,<br>please</button>
         </div>
         
 <script defer src="./index.js"></script>

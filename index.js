@@ -1,8 +1,11 @@
-// const likeMarks = document.getElementById("like-marks");
+const werewolf = new Audio(src = "/audio/werewolf.wav");
+document.body.appendChild(werewolf);
+const lightning = new Audio(src = "/audio/lightning.m4a");
+document.body.appendChild(lightning);
+
 const like5 = document.getElementById("like-5");
 const like1 = document.getElementById("like-1");
 
-// const killMarks = document.getElementById("kill-marks");
 const kill1 = document.getElementById("kill-1");
 const kill5 = document.getElementById("kill-5");
 
@@ -14,19 +17,21 @@ setups.textContent = "I got told off by a javascript function the other day."
 let jokeStr = "She said, 'I ain't no calla-back girl!'";
 const punchButton = document.getElementById("punch-button");
 punchButton.classList.remove("hide-me");
-
+punchlines.textContent="";
 const likeBtn = document.getElementById("like-btn");
 const killBtn = document.getElementById("kill-btn");
-
+const resetBtn = document.getElementById('reset-btn');
 let likeVal = 0;
 let killVal = 0;
 
 likeBtn.addEventListener("click", event =>{
+    werewolf.play();
     likeVal+=1;
     tallyMark(likeVal, like1, like5);
     newJoke();
 })
 killBtn.addEventListener("click", event =>{
+    lightning.play();
     killVal +=1;
     console.log(killVal);
     tallyMark(killVal, kill1, kill5);
@@ -80,4 +85,14 @@ function newJoke(){
 punchButton.addEventListener("click", (event)=>{
 punchlines.textContent = jokeStr;
 punchButton.classList.add("hide-me");
+})
+
+resetBtn.addEventListener('click', () => {
+    likeVal = 0
+    killVal = 0
+    like1.textContent = ""
+    kill1.textContent = ""
+    like5.textContent = ""
+    kill5.textContent = ""
+    console.log('hi')
 })
