@@ -3,42 +3,22 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: red; 
-    height: 100vh;
-    width: 100wh;
-    position: initial;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url(/gnarledBarkTrees.png);
-    background: linear;
-    background-repeat: no-repeat;
-}
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #422a2a;
+        height: 100vh;
+        width: 100wh;
+        position: initial;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url(/gnarledBarkTrees.png);
+        background: linear;
+        background-repeat: no-repeat;
+    }
 
 
-#pillers {
-    display: block;
-margin-left: auto;
-margin-right: auto;
-}
 
-/*
-.gameBoard {
-    height: 100vh;
-    width: 100wh;
-    position: initial;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-image: url(./graveyardLandscape.png);
-    background: linear
-}
-*/
-
-#btn {
-    background-color: khaki;
-}
 
 #tombstone {
     width: 50%;
@@ -54,13 +34,25 @@ margin-right: auto;
     right: 100px;
     top: 35%;
     border-radius: 50%;
+    position: absolute;
+    right: 130px;
+    top: 31%;
+    border-radius: 50%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 95%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 88%;
     border: groove;
     padding: 42px;
+    border: groove;
+    padding: 42px;
+    background: linear-gradient(
+    57deg, #912c22f5, #000000bd);
 }
 
 #like-btn:hover{
     box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
-    0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    0 5px 50px 0 #2fb615 inset, 0 5px 50px 0 #2fb615;
     cursor: url(/images/cursor.png), url;
 }
 
@@ -76,7 +68,7 @@ margin-right: auto;
 }
 
 #kill-btn:hover {
-    box-shadow: 0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #8b1515,
+    box-shadow: 0 5px 50px 0 #f49b15 inset, 0 5px 50px 0 #f49b15,
     0 5px 50px 0 #f41515 inset, 0 5px 50px 0 #f41515;
     
 }
@@ -85,30 +77,26 @@ margin-right: auto;
     position: absolute;
     left: 0;
     bottom: 0;
-     height: 600px;
-     width: 600px;
+    height: 600px;
+    width: 600px;
     background-image: url(./Tombstone.png);
-     background-size: 100% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat; 
 }
 
 #setups{
- /*   top: 58%;
-    left: 39%;*/
+    width: 300px;
+    height: 133px;
+    padding: 50px;
+    left: 10%;
+    top: 10%;
+    border: none;
     position: relative;
-
-    border: 2px solid black;
-    /* color: #FFFFFF;
-    background: #FFFFFF;
-    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    border: none;
     color: #FFFFFF;
+    background: #912C22;
+    text-shadow: -14px 20px 10px #972d2d;
     background: padding-box;
- */
-color: #FFFFFF;
-background: #912C22;
-text-shadow: 0 0 10px #FFFFFF;
-color: #FFFFFF;
-background: padding-box;
 }
 
 .hide-me{
@@ -125,20 +113,70 @@ background: padding-box;
 }
 
 
+#punchlines {
+    width: 300px;
+    height: 32px;
+    padding: 42px;
+    position: absolute;
+    left: 19%;
+    border: none;
+    text-shadow: 18px 20px 8px #2fb615;
+}
 
-/* set ups  */
-/* position: relative;
-    border: 2
-px
- solid black;
-    color: #FFFFFF;
-    background: #912C22;
-    text-shadow: 0 0 10px #ffffff;
-    color: #FFFFFF;
-    background: padding-box;
-    top: 27%;
-    left: 13%;
-    border-top-left-radius: 6%;
-    border-top-right-radius: 29%;
-    width: 59%;
-    height: 29%; */
+
+#like-btn {
+    position: absolute;
+    right: 100px;
+    top: 35%;
+    border-radius: 50%;
+    position: absolute;
+    right: 22%;
+    top: 31%;
+    border-radius: 50%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 95%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 88%;
+    padding: 42px;
+    border: ridge lawngreen;
+    padding: 42px;
+    background: linear-gradient(
+    57deg, #2fb615, #000000bd);
+}
+
+#kill-btn {
+    position: absolute;
+    right: 33%;
+    top: 32%;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: 33%;
+    top: 32%;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: linear-gradient(
+    57deg, #912c22f5, #000000bd);
+    font-size: inherit;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 95%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 88%;
+    border: ridge brown;
+    padding: 42px;
+}
+
+#punch-button {
+    text-size-adjust: 142%;
+    height: 10%;
+    width: 23%;
+    border-radius: 88%;
+    background: #5e9788;
+    position: absolute;
+    top: 78%;
+    left: 44%;
+    border-top-right-radius: 83%;
+    border-top-left-radius: 84%;
+    border-bottom-left-radius: 74%;
+}
+
