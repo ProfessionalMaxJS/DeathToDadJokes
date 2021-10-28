@@ -78,6 +78,6 @@ function newJoke(){
 }
 
 punchButton.addEventListener("click", (event)=>{
-   punchlines.textContent = jokeStr;
-   punchButton.classList.add("hide-me");
+punchlines.textContent = jokeStr;
+punchButton.classList.add("hide-me");
 })
