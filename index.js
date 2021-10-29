@@ -2,6 +2,8 @@ const werewolf = new Audio(src = "/audio/werewolf.wav");
 document.body.appendChild(werewolf);
 const lightning = new Audio(src = "/audio/lightning.m4a");
 document.body.appendChild(lightning);
+const witch = new Audio (src = "/audio/witch.mp3");
+document.body.appendChild(witch);
 
 const like5 = document.getElementById("like-5");
 const like1 = document.getElementById("like-1");
@@ -88,6 +90,7 @@ punchButton.classList.add("hide-me");
 })
 
 resetBtn.addEventListener('click', () => {
+    witch.play();
     likeVal = 0
     killVal = 0
     like1.textContent = ""
