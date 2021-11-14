@@ -12,7 +12,7 @@ body {
         position: initial;
         background-size: cover;
         background-position: 50% 50%;
-        background-image: url(/gnarledBarkTrees.png);
+        background-image: url(./gnarledBarkTrees.png);
         background: linear;
         background-repeat: no-repeat;
     }
