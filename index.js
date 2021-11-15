@@ -1,4 +1,4 @@
-const werewolf = new Audio(src = ".audio/werewolf.wav");
+const werewolf = new Audio(src = ".audio/werewolf.mp3");
 document.body.appendChild(werewolf);
 const lightning = new Audio(src = "./audio/lightning.m4a");
 document.body.appendChild(lightning);
@@ -97,5 +97,5 @@ resetBtn.addEventListener('click', () => {
     kill1.textContent = ""
     like5.textContent = ""
     kill5.textContent = ""
-    console.log('hi')
+    // console.log('hi')
 })
