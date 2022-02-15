@@ -14,4 +14,4 @@ Program Limitations:
 -If a fetch fails, the error message is (deliberately) displayed where the joke text is usually rendered. This is meant to be helpful, but is probably mostly helpful to other programmers and savvy users than to a general user.
 -More advanced string manipulation would be required to further parse strings with a multiple setups and punchlines format (ie: knock knock / banana...ask your kids, if you haven't heard that one yet), or to adjust our formatting to the "edge cases" of very long jokes.
 
-Check out the deployed version [here](https://professionalmaxjs.github.io/DeathToDadJokes/) or the Demo video [here](https://youtu.be/i81w1Ufl2RM). For any questions, don't hesitate to reach out to this GitHub repo, or on Slack. Happy Laughing (or Cringing)! And - Happy Halloweeeeeeeeeeeen!
+Check out the deployed version [here](https://professionalmaxjs.github.io/DeathToDadJokes/) or the demo video [here](https://youtu.be/i81w1Ufl2RM). For any questions, don't hesitate to reach out to this GitHub repo, or on Slack. Happy Laughing (or Cringing)! And - Happy Halloweeeeeeeeeeeen!
